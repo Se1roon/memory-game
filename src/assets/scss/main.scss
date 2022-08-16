@@ -1,6 +1,12 @@
 @use './normalize.css';
 @use './header.scss';
+@use './game.scss';
+@use './versions.scss';
 
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
 }
