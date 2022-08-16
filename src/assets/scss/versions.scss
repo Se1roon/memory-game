@@ -1,14 +1,18 @@
 @import './variables.scss';
 
+$ul-font-size: 1.7rem;
 $ul-width: min(450px, 90%);
+$ul-margin: 2rem 0 0 0;
 $li-border-radius: 1em;
-$li-box-shadow: 0 2px 8px hsl(200 100% 50%);
+$li-box-shadow: 0 4px 8px hsl(200 100% 50%);
+$li-padding: 0.6rem 0.2rem;
+$li-margin: 1.2rem;
 
 .version-selection {
-    font-size: 1.7rem;
+    font-size: $ul-font-size;
     width: $ul-width;
     list-style: none;
-    margin: 2rem 0 0 0;
+    margin: $ul-margin;
     padding: 0;
 
     li {
@@ -16,8 +20,8 @@ $li-box-shadow: 0 2px 8px hsl(200 100% 50%);
         color: $white;
         text-align: center;
         background-color: $black;
-        margin: 1rem;
-        padding: 0.6rem 0.2rem;
+        margin: $li-margin;
+        padding: $li-padding;
         border-radius: $li-border-radius;
         transition: box-shadow 400ms;
 
