@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import './variables.scss';
+
+.header {
+    font-family: 'Rubik Burned', cursive;
+    color: $white;
+    background-color: $black;
+    padding: 1rem 2rem;
+
+    h1 {
+        margin: 0;
+    }
+}
