@@ -1,17 +1,26 @@
 import React, { useState } from "react";
 import { getVersions } from "../versions";
 import Version from "./Version";
+import PropTypes from "prop-types";
 
-const Versions = () => {
+const Versions = ({ onVersionSelect }) => {
   const [versions, setVersions] = useState(getVersions());
 
   return (
     <ul className="version-selection">
       {versions.map((version) => (
-        <Version key={version.name} versionName={version.name} />
+        <Version
+          key={version.name}
+          version={version}
+          onVersionSelect={() => onVersionSelect(version)}
+        />
       ))}
     </ul>
   );
+};
+
+Versions.propTypes = {
+  onVersionSelect: PropTypes.func.isRequired,
 };
 
 export default Versions;
