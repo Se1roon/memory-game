@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+$ul-width: min(450px, 90%);
+$li-border-radius: 1em;
+$li-box-shadow: 0 2px 8px hsl(200 100% 50%);
+
+.version-selection {
+    font-size: 1.7rem;
+    width: $ul-width;
+    list-style: none;
+    margin: 2rem 0 0 0;
+    padding: 0;
+
+    li {
+        cursor: pointer;
+        color: $white;
+        text-align: center;
+        background-color: $black;
+        margin: 1rem;
+        padding: 0.6rem 0.2rem;
+        border-radius: $li-border-radius;
+        transition: box-shadow 400ms;
+
+        &:hover, &:focus {
+            box-shadow: $li-box-shadow;
+        }
+    }
+}
