@@ -1,8 +1,8 @@
 import React from "react";
 
-const Card = ({ imgLink }) => {
+const Card = ({ imgLink, onClick }) => {
   return (
-    <div className="card">
+    <div className="card" onClick={onClick}>
       {/* <img src={imgLink} alt="card" />
        */}
       {imgLink}

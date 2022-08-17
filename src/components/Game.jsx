@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Versions from "./Versions";
+import Header from "./Header";
+import Cards from "./Cards";
 
 const Game = () => {
   const [isPlaying, setPlaying] = useState(false);
@@ -10,6 +12,8 @@ const Game = () => {
   const handleVersionSelection = (version) => {
     setVersion(version);
     setPlaying(true);
+
+    document.querySelector(".game").classList.add("active");
   };
 
   const renderVersionSelection = () => {
@@ -21,8 +25,18 @@ const Game = () => {
     );
   };
 
+  const renderGame = () => {
+    return (
+      <React.Fragment>
+        <Header text={version.name} />
+      </React.Fragment>
+    );
+  };
+
   return (
-    <main className="game">{!isPlaying ? renderVersionSelection() : null}</main>
+    <main className="game">
+      {!isPlaying ? renderVersionSelection() : renderGame()}
+    </main>
   );
 };
 
