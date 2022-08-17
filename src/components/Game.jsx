@@ -8,7 +8,7 @@ const Game = () => {
   const [bestScore, setBestScore] = useState(0);
 
   const handleVersionSelection = (version) => {
-    setVersion({ version });
+    setVersion(version);
     setPlaying(true);
   };
 
