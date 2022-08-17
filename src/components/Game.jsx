@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Versions from "./Versions";
 import Header from "./Header";
 import Cards from "./Cards";
+import changeIndexes from "../shuffleItems";
 
 const Game = () => {
   const [isPlaying, setPlaying] = useState(false);
@@ -14,6 +15,18 @@ const Game = () => {
     setPlaying(true);
 
     document.querySelector(".game").classList.add("active");
+  };
+
+  const shuffle = () => {
+    const cards = [...version.cards];
+    changeIndexes(cards);
+
+    const newVersion = {
+      ...version,
+      cards,
+    };
+
+    setVersion(newVersion);
   };
 
   const renderVersionSelection = () => {
@@ -29,6 +42,7 @@ const Game = () => {
     return (
       <React.Fragment>
         <Header text={version.name} />
+        <Cards version={version} onClick={shuffle} />
       </React.Fragment>
     );
   };
