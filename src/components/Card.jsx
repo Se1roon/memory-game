@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Card = ({ imgLink, onClick }) => {
   return (
@@ -8,6 +9,11 @@ const Card = ({ imgLink, onClick }) => {
       {imgLink}
     </div>
   );
+};
+
+Card.propTypes = {
+  imgLink: PropTypes.number.isRequired, // TODO: Change this to string later
+  onClick: PropTypes.func.isRequired,
 };
 
 export default Card;
