@@ -4,7 +4,7 @@ import Game from "./components/Game";
 function App() {
   return (
     <div>
-      <Header />
+      <Header text="Memory Game - Bleach" />
       <Game />
     </div>
   );

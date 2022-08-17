@@ -1,9 +1,9 @@
 import React from "react";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className="header">
-      <h1>Memory Game - Bleach</h1>
+      <h1>{props.text}</h1>
     </header>
   );
 };
