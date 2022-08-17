@@ -10,7 +10,7 @@ const Versions = ({ onVersionSelect }) => {
     <ul className="version-selection">
       {versions.map((version) => (
         <Version
-          key={version.name}
+          key={version.id}
           version={version}
           onVersionSelect={() => onVersionSelect(version)}
         />
