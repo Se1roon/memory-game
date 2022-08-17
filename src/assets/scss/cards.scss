@@ -9,9 +9,19 @@
 }
 
 .card {
+    $border-color: hsl(200 100% 50%);
+    $border-radius: 1em;
+
+    cursor: pointer;
     background-color: $white;
     width: 150px;
     height: 200px;
-    border-radius: 1em;
+    border: 2px solid $border-color;
+    border-radius: $border-radius;
     @include flex-center;
+    transition: box-shadow 300ms ease;
+
+    &:hover, &:focus {
+        box-shadow: 0 0 12px $border-color;
+    }
 }
