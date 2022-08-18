@@ -1,12 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Header = ({ text }) => {
+const Header = ({ text, home }) => {
   return (
     <header className="header">
-      <h1>{text}</h1>
+      <h1>{home ? <a href="/">{text}</a> : text}</h1>
     </header>
   );
+};
+
+Header.defaultProps = {
+  home: false,
 };
 
 Header.propTypes = {
