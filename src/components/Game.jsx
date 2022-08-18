@@ -3,6 +3,7 @@ import Versions from "./Versions";
 import Header from "./Header";
 import Cards from "./Cards";
 import changeIndexes from "../shuffleItems";
+import Scoreboard from "./ScoreBoard";
 
 const Game = () => {
   const [isPlaying, setPlaying] = useState(false);
@@ -10,6 +11,7 @@ const Game = () => {
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
   const [cardsClicked, setCardsClicked] = useState([]);
+  const [isLoss, setLoss] = useState(false);
 
   const handleVersionSelection = (version) => {
     setVersion(version);
@@ -20,9 +22,14 @@ const Game = () => {
 
   const handleCardClick = (card) => {
     if (cardsClicked.includes(card)) {
-      console.log("Loss");
+      setLoss(true);
+      setCardsClicked([]);
+      setScore(0);
       return;
     }
+    setLoss(false);
+    setScore(score + 1);
+    if (score >= bestScore) setBestScore(score + 1);
 
     const cardsClickedCopy = [...cardsClicked];
     cardsClickedCopy.push(card);
@@ -57,6 +64,7 @@ const Game = () => {
       <React.Fragment>
         <Header text={version.name} />
         <Cards version={version} onClick={handleCardClick} />
+        <Scoreboard score={score} bestScore={bestScore} isLoss={isLoss} />
       </React.Fragment>
     );
   };

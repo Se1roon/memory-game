@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+.scoreboard {
+    color: $white;
+    width: 30%;
+    margin-top: 2rem;
+    @include flex-center;
+    flex-direction: column;
+
+    > p {
+        font-size: 1.2em;
+        font-weight: 800;
+        color: hsl(0 100% 50%);
+        margin: 0;
+    }
+
+    &__score-container {
+        display: flex;
+        gap: 2rem;
+    }
+}
