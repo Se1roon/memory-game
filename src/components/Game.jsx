@@ -9,12 +9,26 @@ const Game = () => {
   const [version, setVersion] = useState();
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
+  const [cardsClicked, setCardsClicked] = useState([]);
 
   const handleVersionSelection = (version) => {
     setVersion(version);
     setPlaying(true);
 
     document.querySelector(".game").classList.add("active");
+  };
+
+  const handleCardClick = (card) => {
+    if (cardsClicked.includes(card)) {
+      console.log("Loss");
+      return;
+    }
+
+    const cardsClickedCopy = [...cardsClicked];
+    cardsClickedCopy.push(card);
+
+    setCardsClicked(cardsClickedCopy);
+    shuffle();
   };
 
   const shuffle = () => {
@@ -42,7 +56,7 @@ const Game = () => {
     return (
       <React.Fragment>
         <Header text={version.name} />
-        <Cards version={version} onClick={shuffle} />
+        <Cards version={version} onClick={handleCardClick} />
       </React.Fragment>
     );
   };

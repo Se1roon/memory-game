@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Card = ({ card, onClick }) => {
   return (
-    <div className="card" onClick={onClick}>
+    <div className="card" onClick={(card) => onClick(card)}>
       {/* <img src={imgLink} alt="card" />
        */}
       {card.id}

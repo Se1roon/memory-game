@@ -6,7 +6,7 @@ const Cards = ({ version, onClick }) => {
   return (
     <div className="cards-container">
       {version.cards.map((card) => (
-        <Card key={card.id} card={card} onClick={onClick} /> // TODO: Change imgLink to card.source
+        <Card key={card.id} card={card} onClick={() => onClick(card)} /> // TODO: Change imgLink to card.source
       ))}
     </div>
   );
