@@ -6,98 +6,102 @@ const versions = [
     cards: [
       {
         id: 1,
-        source: "",
+        source: "Shigekuni-Yamamoto.webp",
       },
       {
         id: 2,
-        source: "",
+        source: "Sui-Fong.webp",
       },
       {
         id: 3,
-        source: "",
+        source: "Gin-Ichimaru.webp",
       },
       {
         id: 4,
-        source: "",
+        source: "Retsu-Unohana.webp",
       },
       {
         id: 5,
-        source: "",
+        source: "Souske-Aizen.webp",
       },
       {
         id: 6,
-        source: "",
+        source: "Byakuya-Kuchiki.webp",
       },
       {
         id: 7,
-        source: "",
+        source: "Sajin-Komamura.webp",
       },
       {
         id: 8,
-        source: "",
+        source: "Shunsui-Kyoraku.webp",
       },
       {
         id: 9,
-        source: "",
+        source: "Mayuri-Kurotsuchi.webp",
       },
       {
         id: 10,
-        source: "",
+        source: "Toshiro-Hitsugaya.webp",
       },
       {
         id: 11,
-        source: "",
+        source: "Kaname-Tousen.webp",
       },
       {
         id: 12,
-        source: "",
+        source: "Jushiro-Ukitake.webp",
       },
       {
         id: 13,
-        source: "",
+        source: "Kenpachi-Zaraki.webp",
       },
     ],
   },
   {
     id: "135764502",
     name: "Espada",
-    numberOfCards: 9,
+    numberOfCards: 10,
     cards: [
       {
         id: 1,
-        source: "",
+        source: "Yammy-Llargo.webp",
       },
       {
         id: 2,
-        source: "",
+        source: "Coyote-Starrk.webp",
       },
       {
         id: 3,
-        source: "",
+        source: "Baraggan.webp",
       },
       {
         id: 4,
-        source: "",
+        source: "Harribel.webp",
       },
       {
         id: 5,
-        source: "",
+        source: "Ulquiorra-Cifer.webp",
       },
       {
         id: 6,
-        source: "",
+        source: "Nnoitora.webp",
       },
       {
         id: 7,
-        source: "",
+        source: "Grimmjow.webp",
       },
       {
         id: 8,
-        source: "",
+        source: "Zommari.webp",
       },
       {
         id: 9,
-        source: "",
+        source: "Szayelaporro.webp",
+      },
+      {
+        id: 10,
+        source: "Aaroniero.webp",
       },
     ],
   },
@@ -108,59 +112,59 @@ const versions = [
     cards: [
       {
         id: 1,
-        source: "",
+        source: "Ginjo.webp",
       },
       {
         id: 2,
-        source: "",
+        source: "Giriko.webp",
       },
       {
         id: 3,
-        source: "",
+        source: "Riruka.webp",
       },
       {
         id: 4,
-        source: "",
+        source: "Jackie.webp",
       },
       {
         id: 5,
-        source: "",
+        source: "Tsukishima.webp",
       },
       {
         id: 6,
-        source: "",
+        source: "Yukio.webp",
       },
       {
         id: 7,
-        source: "",
+        source: "Sado.webp",
       },
       {
         id: 8,
-        source: "",
+        source: "Shishigawara.webp",
       },
       {
         id: 9,
-        source: "",
+        source: "Ichigo.webp",
       },
       {
         id: 10,
-        source: "",
+        source: "Yhwach.webp",
       },
       {
         id: 11,
-        source: "",
+        source: "Ishida.webp",
       },
       {
         id: 12,
-        source: "",
+        source: "Haschwalth.webp",
       },
       {
         id: 13,
-        source: "",
+        source: "Ryuken.webp",
       },
       {
         id: 14,
-        source: "",
+        source: "Masaki.webp",
       },
     ],
   },
@@ -171,63 +175,63 @@ const versions = [
     cards: [
       {
         id: 1,
-        source: "",
+        source: "Urahara.webp",
       },
       {
         id: 2,
-        source: "",
+        source: "Aizen2.webp",
       },
       {
         id: 3,
-        source: "",
+        source: "Hisagi.webp",
       },
       {
         id: 4,
-        source: "",
+        source: "Ichibe.webp",
       },
       {
         id: 5,
-        source: "",
+        source: "Tenjirou.webp",
       },
       {
         id: 6,
-        source: "",
+        source: "Oetsu.webp",
       },
       {
         id: 7,
-        source: "",
+        source: "Rose.webp",
       },
       {
         id: 8,
-        source: "",
+        source: "Hirako.webp",
       },
       {
         id: 9,
-        source: "",
+        source: "Zangetsu.webp",
       },
       {
         id: 10,
-        source: "",
+        source: "Renji.webp",
       },
       {
         id: 11,
-        source: "",
+        source: "Ichigo.webp",
       },
       {
         id: 12,
-        source: "",
+        source: "Byakuya-Kuchiki.webp",
       },
       {
         id: 13,
-        source: "",
+        source: "Shunsui-Kyoraku.webp",
       },
       {
         id: 14,
-        source: "",
+        source: "Ulquiorra-Cifer.webp",
       },
       {
         id: 15,
-        source: "",
+        source: "Ginjo.webp",
       },
     ],
   },
@@ -238,63 +242,63 @@ const versions = [
     cards: [
       {
         id: 1,
-        source: "",
+        source: "Rukia.webp",
       },
       {
         id: 2,
-        source: "",
+        source: "Hikifune.webp",
       },
       {
         id: 3,
-        source: "",
+        source: "Senjumaru.webp",
       },
       {
         id: 4,
-        source: "",
+        source: "Hiyori.webp",
       },
       {
         id: 5,
-        source: "",
+        source: "Unohana2.webp",
       },
       {
         id: 6,
-        source: "",
+        source: "Harribel.webp",
       },
       {
         id: 7,
-        source: "",
+        source: "Riruka.webp",
       },
       {
         id: 8,
-        source: "",
+        source: "Sui-Fong.webp",
       },
       {
         id: 9,
-        source: "",
+        source: "Yachiru.webp",
       },
       {
         id: 10,
-        source: "",
+        source: "Rangiku.webp",
       },
       {
         id: 11,
-        source: "",
+        source: "Orihime.webp",
       },
       {
         id: 12,
-        source: "",
+        source: "Tatsuki.webp",
       },
       {
         id: 13,
-        source: "",
+        source: "Hinamori.webp",
       },
       {
         id: 14,
-        source: "",
+        source: "Apacci.webp",
       },
       {
         id: 15,
-        source: "",
+        source: "Sung-Sun.webp",
       },
     ],
   },

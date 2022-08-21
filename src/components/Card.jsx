@@ -4,15 +4,13 @@ import PropTypes from "prop-types";
 const Card = ({ card, onClick }) => {
   return (
     <div className="card" onClick={(card) => onClick(card)}>
-      {/* <img src={imgLink} alt="card" />
-       */}
-      {card.id}
+      <img src={require(`../assets/images/${card.source}`)} alt={card.id} />
     </div>
   );
 };
 
 Card.propTypes = {
-  card: PropTypes.object.isRequired, // TODO: Change this to string later
+  card: PropTypes.object.isRequired,
   onClick: PropTypes.func.isRequired,
 };
 
