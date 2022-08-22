@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Header = ({ text, home }) => {
   return (
     <header className="header">
-      <h1>{home ? <a href="/">{text}</a> : text}</h1>
+      <h1>{home ? <a href="/memory-game/">{text}</a> : text}</h1>
     </header>
   );
 };
